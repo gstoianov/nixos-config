@@ -56,7 +56,7 @@
     };
 
     supportedFilesystems = [ "ntfs-3g" ];
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages_4_8;
   };
 
   powerManagement.enable = true;
