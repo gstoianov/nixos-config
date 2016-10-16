@@ -174,15 +174,15 @@
       enable = true;
       sessionPath = [ pkgs.libgtop ];
     };
-    synaptics = {
-      enable = true;
-      vertEdgeScroll = true;
-      # additionalOptions = ''
-      #   MatchDevicePath "/dev/input/event*"
-      #   Option "vendor" "045e"
-      # Option "product" "07e8"
-      # '';
-    };
+    # synaptics = {
+    #   enable = true;
+    #   vertEdgeScroll = true;
+    #   # additionalOptions = ''
+    #   #   MatchDevicePath "/dev/input/event*"
+    #   #   Option "vendor" "045e"
+    #   # Option "product" "07e8"
+    #   # '';
+    # };
     # wacom.enable = true;
   };
 
