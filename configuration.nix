@@ -74,7 +74,7 @@
         text = "fake Linux from scratch file hoping to fool getos.js";
       };
     };
-    # gnome3.packageSet = pkgs.gnome3_18;
+    # gnome3.packageSet = pkgs.gnome3_20;
   };
 
   services = {
@@ -95,8 +95,8 @@
       exportConfiguration = true;
 
       displayManager = {
-        kdm.enable = true;
-        gdm.enable = false;
+        lightdm.enable = false;
+        gdm.enable = true;
       };
 
       desktopManager = {
