@@ -8,7 +8,8 @@
       efi.canTouchEfiVariables = true;
     };
 
-    kernelPackages = pkgs.linuxPackages_4_8;
+    # kernelPackages = pkgs.linuxPackages_4_8;
+    kernelPackages = pkgs.linuxPackagesFor pkgs.linux_mssp4;
   };
 
   networking = {
