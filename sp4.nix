@@ -12,6 +12,10 @@
     kernelPackages = pkgs.linuxPackagesFor pkgs.linux_mssp4;
   };
 
+  hardware = {
+    firmware = [ pkgs.intel-ipts-firmware ];
+  };
+
   networking = {
     hostName = "nixos-sp4";
     extraHosts =
