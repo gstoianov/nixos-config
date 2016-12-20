@@ -33,6 +33,7 @@
 
   networking = {
     firewall.enable = false;
+    networkmanager.enable = true;
     extraHosts =
       ''
       127.0.0.1 local.ubix.io
