@@ -20,4 +20,31 @@
       '';
   };
 
+  i18n = {
+    consoleFont = "Lat2-Terminus16";
+  };
+
+  services.xserver = {
+    displayManager = {
+      lightdm.enable = false;
+      gdm.enable = true;
+      sddm.enable = false;
+    };
+
+    desktopManager = {
+      kde5.enable = false;
+      gnome3 = {
+        enable = true;
+        sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
+      };
+    };
+
+    windowManager = {
+      xmonad = {
+        enable = true;
+        enableContribAndExtras = true;
+      };
+    };
+  }
+
 }

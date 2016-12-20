@@ -41,7 +41,6 @@
   };
 
   i18n = {
-    consoleFont = "Lat2-Terminus16";
     consoleKeyMap = "dvorak";
     defaultLocale = "en_US.UTF-8";
   };
@@ -94,27 +93,6 @@
       layout = "us";
       xkbVariant = "dvorak";
       exportConfiguration = true;
-
-      displayManager = {
-        lightdm.enable = false;
-        gdm.enable = true;
-      };
-
-      desktopManager = {
-        kde5.enable = false;
-        gnome3 = {
-          enable = true;
-          sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
-        };
-      };
-
-      windowManager = {
-        xmonad = {
-          enable = true;
-          enableContribAndExtras = true;
-        };
-      };
-
     };
   };
 
