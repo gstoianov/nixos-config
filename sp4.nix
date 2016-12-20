@@ -16,6 +16,11 @@
     firmware = [ pkgs.intel-ipts-firmware ];
   };
 
+  i18n = {
+    # consoleFont = "Lat2-Terminus16";
+    consoleFont = "sun12x22";
+  };
+
   networking = {
     hostName = "nixos-sp4";
     extraHosts =
