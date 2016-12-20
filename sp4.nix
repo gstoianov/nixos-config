@@ -10,6 +10,8 @@
 
     # kernelPackages = pkgs.linuxPackages_4_8;
     kernelPackages = pkgs.linuxPackagesFor pkgs.linux_mssp4;
+    # kernelModules = [ "hid-multitouch" ];
+    # initrd.kernelModules = [ "hid-multitouch" ];
   };
 
   hardware = {
