@@ -24,21 +24,20 @@
   };
 
   environment.systemPackages = [
-    # pkgs.kde5.kmix
-    pkgs.kde5.okular
+    pkgs.okular
   ];
 
   services.xserver = {
     multitouch.enable = true;
 
     displayManager = {
-      lightdm.enable = true;
+      lightdm.enable = false;
       gdm.enable = false;
-      sddm.enable = false;
+      sddm.enable = true;
     };
 
     desktopManager = {
-      kde5.enable = true;
+      plasma5.enable = true;
       gnome3 = {
         enable = false;
         sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
@@ -47,7 +46,7 @@
 
     windowManager = {
       xmonad = {
-        enable = true;
+        enable = false;
         enableContribAndExtras = true;
       };
     };
