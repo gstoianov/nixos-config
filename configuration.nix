@@ -80,6 +80,21 @@
     };
   };
 
+  containers = {
+    ubixServices = {
+      config =
+        { config, pkgs, ... }:
+        {
+          services.zookeeper = {
+            enable = true;
+          };
+          services.apache-kafka = {
+            enable = true;
+          };
+        };
+    };
+  };
+
   virtualisation.docker = {
     enable = true;
     storageDriver = "btrfs";
