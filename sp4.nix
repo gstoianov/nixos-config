@@ -59,14 +59,14 @@
   #   "http://192.168.0.100:5001"
   # ];
 
-  nix.binaryCachePublicKeys = [
-    "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+  # nix.binaryCachePublicKeys = [
+    # "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
 
     # Replace the following string with the contents of the
     # `nix-serve.pub` file you generated in the "Server configuration"
     # section above
-    "192.168.0.100:0Hvx/nyjrKng7On9LCqwj4bSxYmiDSscTazXXdIJLFY="
-  ];
+    # "192.168.0.100:0Hvx/nyjrKng7On9LCqwj4bSxYmiDSscTazXXdIJLFY="
+  # ];
 
   networking = {
     hostName = "nixos-sp4";
