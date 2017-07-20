@@ -7,6 +7,7 @@
       version = 2;
       # Define on which hard drive you want to install Grub.
       device = "/dev/sda";
+      useOSProber = true;
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
