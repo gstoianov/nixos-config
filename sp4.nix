@@ -8,14 +8,14 @@
       efi.canTouchEfiVariables = true;
     };
 
-    # kernelPackages = pkgs.linuxPackages_4_8;
-    kernelPackages = pkgs.linuxPackagesFor pkgs.linux_mssp4;
+    kernelPackages = pkgs.linuxPackages_latest;
+    # kernelPackages = pkgs.linuxPackagesFor pkgs.linux_mssp4;
     # kernelModules = [ "hid-multitouch" ];
     # initrd.kernelModules = [ "hid-multitouch" ];
   };
 
   hardware = {
-    firmware = [ pkgs.intel-ipts-firmware ];
+    # firmware = [ pkgs.intel-ipts-firmware ];
   };
 
   i18n = {
