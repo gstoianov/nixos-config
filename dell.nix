@@ -33,10 +33,10 @@
     };
 
     desktopManager = {
-      kde5.enable = false;
+      plasma5.enable = false;
       gnome3 = {
         enable = true;
-        sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
+        sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller pkgs.p7zip ];
       };
     };
 
@@ -46,6 +46,6 @@
         enableContribAndExtras = true;
       };
     };
-  }
+  };
 
 }
