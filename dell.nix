@@ -42,7 +42,7 @@
 
     windowManager = {
       xmonad = {
-        enable = true;
+        enable = false;
         enableContribAndExtras = true;
       };
     };
