@@ -52,23 +52,6 @@
 
   environment = {
     systemPackages = with pkgs; [
-      git wget
-      sublime3
-      playonlinux wine
-      bind nix-repl glxinfo pciutils usbutils coreutils
-      dmidecode
-      chromium
-      vim vlc mc
-      skype slack
-      deluge remmina
-
-      stack
-
-      haskellPackages.xmobar
-      haskellPackages.yeganesh
-      stalonetray
-      dmenu
-      scrot
     ];
     etc = {
       lfs_version = {
