@@ -27,10 +27,10 @@
   # Enable the X11 windowing system.
   services = {
     xserver = {
-      synaptics = {
-        enable = true;
-    	vertEdgeScroll = true;
-      };
+      # synaptics = {
+      #   enable = true;
+      #   vertEdgeScroll = true;
+      # };
 
       displayManager = {
         lightdm.enable = true;
