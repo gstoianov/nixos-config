@@ -33,15 +33,15 @@
       # };
 
       displayManager = {
-        lightdm.enable = true;
-        gdm.enable = false;
+        lightdm.enable = false;
+        gdm.enable = true;
         sddm.enable = false;
       };
 
       desktopManager = {
-        plasma5.enable = true;
+        plasma5.enable = false;
         gnome3 = {
-          enable = false;
+          enable = true;
           sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
         };
       };
