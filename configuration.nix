@@ -7,7 +7,7 @@
 {
   nixpkgs.config = {
     allowUnfree = true;
-    wine.build = "wine32";
+    # wine.build = "wine32";
   };
 
   hardware = {
