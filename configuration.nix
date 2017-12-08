@@ -29,7 +29,7 @@
 
   powerManagement = {
     enable = true;
-    cpuFreqGovernor = "powersave";
+    # cpuFreqGovernor = "powersave";
   };
 
   networking = {
