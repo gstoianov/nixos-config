@@ -59,6 +59,9 @@
     systemPackages = with pkgs; [
     ];
     etc = {
+      timezone = {
+        text = "needed to mount in ubix docker containers";
+      };
       lfs_version = {
         text = "fake Linux from scratch file hoping to fool getos.js";
       };
