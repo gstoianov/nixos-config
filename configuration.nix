@@ -65,7 +65,7 @@
     thermald.enable = true;
 
     mongodb = {
-      enable = true;
+      enable = false;
       extraConfig =
         ''
         storage.mmapv1.smallFiles: true
