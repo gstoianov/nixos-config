@@ -22,6 +22,11 @@
     };
   };
 
+  nix.nixPath = [
+    "nixpkgs=/home/g/nixpkgs-channels"
+    "nixos-config=/etc/nixos/configuration.nix"
+  ];
+
   # Use the gummiboot efi boot loader.
   boot = {
     supportedFilesystems = [ "ntfs-3g" ];
