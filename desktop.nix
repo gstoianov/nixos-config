@@ -20,26 +20,20 @@
 
   i18n = {
     # consoleFont = "Lat2-Terminus16";
-    consoleFont = "sun12x22";
+    # consoleFont = "sun12x22";
   };
 
-  environment.systemPackages = [
-    pkgs.okular
-  ];
-
   services.xserver = {
-    multitouch.enable = true;
-
     displayManager = {
       lightdm.enable = false;
-      gdm.enable = false;
-      sddm.enable = true;
+      gdm.enable = true;
+      sddm.enable = false;
     };
 
     desktopManager = {
-      plasma5.enable = true;
+      plasma5.enable = false;
       gnome3 = {
-        enable = false;
+        enable = true;
         sessionPath = [ pkgs.libgtop pkgs.gnome3.file-roller ];
       };
     };
@@ -47,7 +41,7 @@
     windowManager = {
       xmonad = {
         enable = false;
-        enableContribAndExtras = true;
+        # enableContribAndExtras = true;
       };
     };
   };
@@ -69,10 +63,10 @@
   # ];
 
   networking = {
-    hostName = "nixos-sp4";
+    hostName = "nixos-desktop";
     extraHosts =
       ''
-      127.0.0.1 nixos-sp4
+      127.0.0.1 nixos-desktop
       '';
   };
 
