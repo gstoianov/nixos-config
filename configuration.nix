@@ -52,6 +52,7 @@
   };
 
   programs.bash.enableCompletion = true;
+  programs.zsh.enable = true;
 
   time.timeZone = "Europe/Bucharest";
 
@@ -111,8 +112,15 @@
 
   users.extraUsers.g = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" "networkmanager" "docker" ];
     uid = 1000;
+    subUidRanges = [
+      { startUid = 100000; count = 65536; }
+    ];
+    subGidRanges = [
+      { startGid = 100000; count = 65536; }
+    ];
   };
 
   # The NixOS release to be compatible with for stateful data such as databases.
